@@ -1,0 +1,128 @@
+/*Padrão*/
+#shopping {
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: -100px;
+  max-width: 1300px;
+  margin: 100px auto;
+  
+}
+#shopping img {
+
+  margin-top: 100px;
+  width:500px;
+  height: 680px;
+
+}
+#name_product {
+
+  font-size: 80px;
+  margin-top: 0px;
+  margin-left: 110px;
+  list-style: none;
+
+}
+#official_site {
+
+  font-size: 32px;
+  margin-left: 110px;
+  list-style: none;
+  text-decoration: none;
+
+}
+#official_site a {
+
+  text-decoration: none;
+  color: #7791EF;
+  font-family: Nokora;
+  font-size: 40px;
+
+}
+#price_before {
+
+  font-size: 23px;
+  margin-top: 60px;
+  margin-left: 110px;
+  list-style: none;
+}
+#price_now {
+
+  font-size: 45px;
+  margin-top: 20px;
+  margin-left: 110px;
+  list-style: none;
+
+}
+#buy_bts {
+
+  margin-top: 90px;
+  margin-left: 110px;
+  width: 500px;
+  height: 70px;
+  background-color: #FFC700;
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 30px;
+  border-radius: 10px;
+
+}
+#car_bts {
+
+  margin-top: 70px;
+  margin-left: 110px;
+  width: 500px;
+  height: 70px;
+  background-color: #333;
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 30px;
+  border-radius: 10px;
+ 
+}
+#information_table {
+    
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  margin-left: 200px;
+}
+.information_table_description {
+
+  display: flex;
+  flex-wrap: wrap;
+  margin: 100px auto;
+  width: 70%;
+  border-collapse: collapse;
+  
+
+}
+.text_table {
+  
+  padding-left: 0;
+  width: 500px;
+  color: #333;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  border-top: 1px solid #BBBFBF;;
+  border-bottom: 1px solid #BBBFBF;
+  padding: 10px;
+  padding: 7px 14px 6px;
+  
+}
+.color_and_description { 
+
+  
+  text-align: center;
+  border-top: 1px solid #BBBFBF;
+  border-bottom: 1px solid #BBBFBF;
+  background-color: #F0F2F2;
+  padding: 7px 14px 6px;
+  font-family: Inter;
+  
+ 
+}

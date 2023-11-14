@@ -1,0 +1,160 @@
+<!--Alterei a register page para que fosse separado a pagina de login e a pagina de register-->
+<!--Alterei a imagem do nav para um carrinho literalmente ao inves de um botao-->
+<!--Fiz o botao login aparecer um lugar onde possa ser colocado seu login e sua senha e também criei um arquivo em javascript com um add para quando ocorrer o active ele aparece essa parte de colocar o login e a senha-->
+<!--Troquei o nome sla para general e coloquei ele como id e depois usei ele na criação do js para ativar o botão com isso fiz algumas alterações no html e css como colocar duas novas div's que estão na área de login/ adicionei um novo comando para o botão register que tem a mesma função do botão de login de ativar -->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Amazuhn</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="../styles/button.css" />
+        <link rel="stylesheet" href="../styles/nav.css" />
+        <link rel="stylesheet" href="../styles/footer.css" />
+        <link rel="stylesheet" href="../styles/page_title.css" />
+        <link rel="icon" href="../assets/logo/icon.jpg" />
+        <link rel="stylesheet" href="comebackside.css" />
+        <link rel="stylesheet" href="rightside.css" />
+        <link rel="stylesheet" href="login.css">
+    </head>
+
+    <body>
+        <nav>
+            <ul class="header">
+                <img
+                    src="../assets/logo/icon.jpg"
+                    alt="logo do site"
+                    id="logo"
+                />
+                <div class="search">
+                    <input
+                        type="text"
+                        class="searchTerm"
+                        placeholder="Pesquise"
+                    />
+                    <button type="submit" class="searchButton">
+                        <i class="fa fa-search">⌂</i>
+                    </button>
+                </div>
+                <li><a href="../homepage2/index.html">Home</a></li>
+                <li><a href="../report_page/index.html">Relatório</a></li>
+                <li><a href="../help_page/index.html">Ajuda</a></li>
+                <li><a href="../register_page/index.html">Entrar</a></li>
+                <li>
+                    <a id="cart_btn" href="#">
+                       <img src="../assets/icons_nav/carrinho-de-compras.png" alt="Carrinho de compras" width="25px">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="general">
+            <div class="container">
+                <div id="comeBackSide">
+                    <div class="left-top-text">
+                        <h1 class="top-text">
+                            <b>Seja bem-vindo de volta!</b>
+                        </h1>
+                    </div>
+                    <div class="input-container-login">
+                        <input type="text" id="login" class="text-inputs">
+                        <label for="login">Login</label>
+                    </div>
+                    <div class="input-container-login">
+                        <input type="password" id="senha" class="text-inputs">
+                        <label for="senha">Senha</label>
+                    </div>
+                    <div>
+                        <button id="confirm-login">
+                            <b>Login</b>
+                        </button>
+                    </div>
+                        <div>
+                            <button id="login-btn">
+                                <b> Login </b>
+                            </button>
+                        </div>
+                </div>
+                <div id="rightSide">
+                    <div class="right-top-div">
+                        <h1 class="top-text">
+                            <b>Novo por aqui?</b>
+                        </h1>
+                    </div>
+                    <div>
+
+                    </div>
+                    <div>
+                        <button id="register-btn">
+                            <b>Registrar</b>
+                        </button>
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div id="teste" class="footer_top">
+                <ul>
+                    <p>Conheça-nos</p>
+                    <li>Sobre a Amazuhn</li>
+                    <li>Informações corporativas</li>
+                    <li>Carreiras</li>
+                    <li>Comunicados à imprensa</li>
+                    <li>Comunidade</li>
+                    <li>Acessibilidade</li>
+                    <li>Amazon Science</li>
+                </ul>
+                <ul>
+                    <p>Pagamento</p>
+                    <li>Meios de Pagamento</li>
+                    <li>Compre com Pontos</li>
+                    <li>Cartão de Crédito</li>
+                </ul>
+                <ul>
+                    <p>Ganhe dinheiro conosco</p>
+                    <li>Venda na Amazon</li>
+                    <li>Proteja e construa a sua marca</li>
+                    <li>Publique seus livros</li>
+                    <li>Seja um associado</li>
+                    <li>Anuncie seus produtos</li>
+                </ul>
+                <ul>
+                    <p>Deixe-nos ajudar você</p>
+                    <li>Sua conta</li>
+                    <li>Frete e prazo de entrega</li>
+                    <li>Devoluções e reembolsos</li>
+                    <li>Gerencie seu conteúdo e dispositivos</li>
+                    <li>Ajuda</li>
+                </ul>
+            </div>
+            <div class="footer_row">
+                <ul>
+                    <li>
+                        <u
+                            >Esta empresa não tem qualquer ligação com a empresa
+                            Amazon</u
+                        >
+                    </li>
+                    <li>
+                        Amazuhn Serviços de Varejo do Brasil Ltda. | CNPJ
+                        15.436.940/0001-03
+                    </li>
+                    <li>
+                        Av. Juscelino Kubitschek, 2041, Torre E, 18° andar - São
+                        Paulo CEP: 04543-011| Fale conosco|
+                        ajuda-amazon@amazon.com.br
+                    </li>
+                    <li>
+                        Formas de pagamento aceitas: cartões de crédito (Visa,
+                        MasterCard, Elo e American Express), cartões de débito
+                        (Visa e Elo), Boleto e Pix.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+     <script type="text/javascript" src="script.js"></script>
+</html>

@@ -1,0 +1,28 @@
+.div_btn {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  margin: 100px auto;
+}
+
+.div_btn img {
+  width: 40px
+}
+
+.help_btns {
+  /*align text with image*/
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 25em;
+
+  /*Design buttom*/
+  padding: 15px 90px;
+  border-radius: 8px;
+  background: #FFC700;
+  border-color: transparent;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 15px;
+  color: black;
+}

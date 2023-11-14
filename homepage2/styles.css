@@ -1,0 +1,87 @@
+body {
+    background-color: #e7e7e7;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.div-btn {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: Arial;
+}
+
+.add-cart-btn {
+    width: 120px;
+    height: 40px;
+    border: 1px solid #ffc700;
+    background: #ffc700;
+    text-align: center;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.help-btns {
+   
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+    width: 10%;
+    height: 30vh;
+
+    
+    padding: 15px 90px;
+    border-radius: 8px;
+    background: #fff;
+    border-color: transparent;
+    font-size: 15px;
+    margin: 15px;
+    color: black;
+}
+
+.teste {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 170%;
+}
+
+.teste img {
+    max-width: 200px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+}
+.info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.info p {
+    font-size: 17px;
+}
+.info span {
+    position: relative;
+    top: -0.3em;
+    font-size: 11px;
+}
+.five-stars-rate {
+    width: 50px; /* width of container /
+    height: 30px; / height of container */
+    object-fit: cover;
+    border: 5px solid black;
+}
+.teste a {
+  
+    text-decoration: none;
+}

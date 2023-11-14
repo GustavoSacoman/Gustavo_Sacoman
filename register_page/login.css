@@ -1,0 +1,75 @@
+:focus {
+    box-shadow: 0 0 0 1px #000;
+    transition: 0.4s;
+}
+
+#login-btn {
+    border-radius: 70px;
+    background: #000;
+    color: #ffc700;
+    width: 200px;
+    height: 100px;
+    font-size: 30px;
+    border: transparent;
+}
+#login-btn:hover {
+    width: 204px;
+    height: 104px;
+    cursor: pointer;
+}
+
+#general.active #login-btn {
+    display: none;
+}
+
+
+.input-container-login input {
+    display: none;
+}
+.input-container-login label {
+    display: none;
+}
+#confirm-login {
+    display: none;
+}
+
+#general.active #confirm-login {
+    display: block;
+    border-radius: 70px;
+    background: #000;
+    color: #ffc700;
+    width: 200px;
+    height: 70px;
+    font-size: 30px;
+    border: transparent;
+}
+#confirm-login:hover {
+    width: 220px;
+    height: 75px;
+    cursor: pointer;
+}
+
+#general.active .input-container-login input {
+    display: block;
+    width: 100%;
+    height: 25px;
+    padding: 6px;
+    background-color: #ffc700;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #282828;
+}
+#general.active .input-container-login label {
+    opacity: 3;
+    display: block;
+    
+}
+#general.active #rightSide {
+    display: none;
+
+}
+#general.active .container {
+
+    background-color: white;
+
+}
