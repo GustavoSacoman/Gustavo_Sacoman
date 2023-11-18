@@ -19,3 +19,17 @@ btn_login.addEventListener('click', login_acive);
     }
 
     btn_register.addEventListener('click', add_register);
+
+
+
+   
+
+
+    const btn_back_register = document.getElementById('comeback');
+
+    function back_register(){
+       const comeback = document.getElementById('general');
+        comeback.classList.remove('active_register');
+    }
+
+    btn_back_register.addEventListener('click', back_register);

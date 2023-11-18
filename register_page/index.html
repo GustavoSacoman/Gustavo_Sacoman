@@ -2,6 +2,7 @@
 <!--Alterei a imagem do nav para um carrinho literalmente ao inves de um botao-->
 <!--Fiz o botao login aparecer um lugar onde possa ser colocado seu login e sua senha e também criei um arquivo em javascript com um add para quando ocorrer o active ele aparece essa parte de colocar o login e a senha-->
 <!--Troquei o nome sla para general e coloquei ele como id e depois usei ele na criação do js para ativar o botão com isso fiz algumas alterações no html e css como colocar duas novas div's que estão na área de login/ adicionei um novo comando para o botão register que tem a mesma função do botão de login de ativar -->
+<!--eu fix uma nova estilizaçao para o register então eu coloquei um botao de retornmo e fiz um código no script.js para ao inicio ao inves de ter que recarregar a pagina-->
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -50,13 +51,57 @@
         </nav>
 
         <div id="general">
+            
             <div class="container">
+                <button id="comeback"><img src="../assets/register_page/seta-esquerda.png" alt="Seta para voltar" width="50px"></button>
+                <div id="title" >
+                    <h1>Criar conta</h1>
+                </div>
+                <div class="create-account">
+                    
+                    
+                    
+                    <div>
+                    <div class="input-account"> 
+                        <input type="text" id="nome" >
+                        <label for="nome">Nome</label>
+                    </div>
+                    <div class="input-account">   
+                        <input type="text" id="cpf" >
+                        <label for="cpf">CPF</label>
+                    </div> 
+                    <div class="input-account">
+                        <input type="text" id="data-nas" >
+                        <label for="data-nas">Data de Nascimento</label>
+                    </div>
+                    <div class="input-account">
+                        <input type="text" id="telefone" >
+                        <label for="telefone">Telefone</label>
+                    </div>
+                    <div class="input-account">
+                        <input type="text" id="email" >
+                        <label for="email">E-mail</label>
+                    </div>
+                    </div>
+
+                    <div>
+                    <div class="input-account">
+                        <input type="text" id="senha" >
+                        <label for="senha">Crie sua senha</label>
+                    </div>
+                    <div class="input-account">
+                        <input type="text" id="confirm-senha" >
+                        <label for="confirm-senha">Confirme sua senha</label>
+                    </div>
+                    </div>
+                </div>
                 <div id="comeBackSide">
                     <div class="left-top-text">
                         <h1 class="top-text">
                             <b>Seja bem-vindo de volta!</b>
                         </h1>
                     </div>
+                   <!--<button class="comeback"><img src="" alt=""></button>--> 
                     <div class="input-container-login">
                         <input type="text" id="login" class="text-inputs">
                         <label for="login">Login</label>

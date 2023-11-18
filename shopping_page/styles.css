@@ -1,4 +1,5 @@
 /*Padrão*/
+
 #shopping {
 
   display: flex;
@@ -125,4 +126,12 @@
   font-family: Inter;
   
  
+}
+
+#notific {
+  background-color: red;
+  padding: 3px;
+  margin-bottom: 10px ;
+  border-radius: 10px;
+  font-size: 8px;
 }

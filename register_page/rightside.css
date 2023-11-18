@@ -1,3 +1,4 @@
+
 #rightSide {
     display: flex;
     flex-direction: column;
@@ -26,7 +27,12 @@
     font-size: 20px;
     
 }
-
+.create-account {
+    display: none;
+}
+#title {
+    display: none;
+}
 #register-btn:hover {
     width: 204px;
     height: 104px;
@@ -38,4 +44,44 @@
 }
 #general.active_register #comeBackSide {
     display: none;
+}
+#general.active_register #rightSide {
+    display: none;
+}
+#general.active_register .create-account{
+    display:flex;
+
+}
+
+#general.active_register #title{
+   display: block;
+    
+    
+}
+#general.active_register #comeback{
+    display:flex;
+    margin-right: 127vh ;
+    background-color: transparent;
+    border: transparent;
+    
+}
+.input-account {
+    margin-left: 15vh;
+    color: #bbb9b9;
+}
+.input-account input {
+
+    width: 100%;
+    height: 25px;
+    padding: 6px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ffc700 ;
+    background-color: #282828 ;
+    color: #bbb9b9;
+    
+
+}
+#title {
+   color: #fff; 
 }
