@@ -1,3 +1,5 @@
+
+
 const btn_login = document.getElementById('login-btn');
 
     function login_acive(){
@@ -21,9 +23,8 @@ btn_login.addEventListener('click', login_acive);
     btn_register.addEventListener('click', add_register);
 
 
-
-   
-
+                    //Comeback Register\\
+//------------------------------------------------------------\\
 
     const btn_back_register = document.getElementById('comeback');
 
@@ -33,3 +34,8 @@ btn_login.addEventListener('click', login_acive);
     }
 
     btn_back_register.addEventListener('click', back_register);
+
+    //============================================================================
+
+
+    

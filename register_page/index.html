@@ -10,7 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Amazuhn</title>
         <link rel="stylesheet" href="styles.css" />
-        <link rel="stylesheet" href="../styles/button.css" />
+        
         <link rel="stylesheet" href="../styles/nav.css" />
         <link rel="stylesheet" href="../styles/footer.css" />
         <link rel="stylesheet" href="../styles/page_title.css" />
@@ -18,6 +18,7 @@
         <link rel="stylesheet" href="comebackside.css" />
         <link rel="stylesheet" href="rightside.css" />
         <link rel="stylesheet" href="login.css">
+        
     </head>
 
     <body>
@@ -53,7 +54,9 @@
         <div id="general">
             
             <div class="container">
+                <div>
                 <button id="comeback"><img src="../assets/register_page/seta-esquerda.png" alt="Seta para voltar" width="50px"></button>
+                </div>
                 <div id="title" >
                     <h1>Criar conta</h1>
                 </div>
@@ -61,7 +64,7 @@
                     
                     
                     
-                    <div>
+                    <form>
                     <div class="input-account"> 
                         <input type="text" id="nome" >
                         <label for="nome">Nome</label>
@@ -82,9 +85,34 @@
                         <input type="text" id="email" >
                         <label for="email">E-mail</label>
                     </div>
-                    </div>
+                    </form>
 
-                    <div>
+                    <form>
+                   
+                    <div class="input-account" id="form" >
+                        
+                        <input type="text" name="cep" id="cep" id="aaa" maxlength="9" onblur="search_cep(this.value)" >
+                        <label for="cep" id="rrr">CEP: </label><br>
+
+                        </label>
+                    </div>
+                    
+                    <div class="input-account" id="form">
+                        <input type="text" name="rua" id="rua">
+                        <label for="rua">Rua: </label>
+                    </div>
+                    <div class="input-account" id="form">
+                        <input type="text" name="bairro" id="bairro">
+                        <label for="bairro">Bairro: </label>
+                    </div>
+                    <div class="input-account" id="form">
+                        <input type="text" name="cidade" id="cidade">
+                        <label for="cidade">Cidade: </label>
+                    </div>
+                    <div class="input-account" id="form">
+                        <input type="text" name="estado" id="estado">
+                        <label for="estado">Estado: </label>
+                    </div>
                     <div class="input-account">
                         <input type="text" id="senha" >
                         <label for="senha">Crie sua senha</label>
@@ -93,7 +121,7 @@
                         <input type="text" id="confirm-senha" >
                         <label for="confirm-senha">Confirme sua senha</label>
                     </div>
-                    </div>
+                    </form>
                 </div>
                 <div id="comeBackSide">
                     <div class="left-top-text">
@@ -201,5 +229,7 @@
             </div>
         </div>
     </body>
-     <script type="text/javascript" src="script.js"></script>
+     <script type="module" src="script.js"></script>
+     <script src="script_api.js"></script>
+     
 </html>
