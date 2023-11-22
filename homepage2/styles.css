@@ -33,8 +33,8 @@ main{
    20% {left: 0px;}
    30% {left: -100%;}
    50% {left: -100%;}
-   60% {left: -100%;}
-   90% {left: -100%;}
+   60% {left: -200%;}
+   90% {left: -200%;}
   100% {left: 0px;}
 }
 .slide img{width: 100%;}

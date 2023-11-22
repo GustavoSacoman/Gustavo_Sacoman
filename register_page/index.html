@@ -2,7 +2,10 @@
 <!--Alterei a imagem do nav para um carrinho literalmente ao inves de um botao-->
 <!--Fiz o botao login aparecer um lugar onde possa ser colocado seu login e sua senha e também criei um arquivo em javascript com um add para quando ocorrer o active ele aparece essa parte de colocar o login e a senha-->
 <!--Troquei o nome sla para general e coloquei ele como id e depois usei ele na criação do js para ativar o botão com isso fiz algumas alterações no html e css como colocar duas novas div's que estão na área de login/ adicionei um novo comando para o botão register que tem a mesma função do botão de login de ativar -->
-<!--eu fix uma nova estilizaçao para o register então eu coloquei um botao de retornmo e fiz um código no script.js para ao inicio ao inves de ter que recarregar a pagina-->
+<!--eu fiz uma nova estilizaçao para o register então eu coloquei um botao de retornmo e fiz um código no script.js para ao inicio ao inves de ter que recarregar a pagina-->
+<!--Coloquei um arquivo em js que se chama script_api onde será colocado em funcionamento o api. o api foi utilizado ifs e else e também a mudança do style pelo javascript-->
+<!--A pagina de registro agora registra os dados no localstorage do site, o código está no script_input.js foi feito a reutilização de algumas variaveis usadas no api como cep, bairro, etc-->
+
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -10,7 +13,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Amazuhn</title>
         <link rel="stylesheet" href="styles.css" />
-        
         <link rel="stylesheet" href="../styles/nav.css" />
         <link rel="stylesheet" href="../styles/footer.css" />
         <link rel="stylesheet" href="../styles/page_title.css" />
@@ -18,6 +20,7 @@
         <link rel="stylesheet" href="comebackside.css" />
         <link rel="stylesheet" href="rightside.css" />
         <link rel="stylesheet" href="login.css">
+
         
     </head>
 
@@ -85,13 +88,17 @@
                         <input type="text" id="email" >
                         <label for="email">E-mail</label>
                     </div>
+                    <div>
+                        <button id="input-date" onclick="salvar()">Registrar</button>
+                    </div>
+                        
                     </form>
 
                     <form>
                    
                     <div class="input-account" id="form" >
                         
-                        <input type="text" name="cep" id="cep" id="aaa" maxlength="9" onblur="search_cep(this.value)" >
+                        <input type="text" name="cep" id="cep" maxlength="9" onblur="search_cep(this.value)" >
                         <label for="cep" id="rrr">CEP: </label><br>
 
                         </label>
@@ -129,7 +136,6 @@
                             <b>Seja bem-vindo de volta!</b>
                         </h1>
                     </div>
-                   <!--<button class="comeback"><img src="" alt=""></button>--> 
                     <div class="input-container-login">
                         <input type="text" id="login" class="text-inputs">
                         <label for="login">Login</label>
@@ -231,5 +237,5 @@
     </body>
      <script type="module" src="script.js"></script>
      <script src="script_api.js"></script>
-     
+     <script src="script_input.js"></script>
 </html>

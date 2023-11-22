@@ -129,6 +129,11 @@
 }
 
 #notific {
+  display: none;
+}
+
+#cell.add #notific{
+  display: block;
   background-color: red;
   padding: 3px;
   margin-bottom: 10px ;

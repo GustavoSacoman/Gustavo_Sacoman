@@ -12,17 +12,13 @@
     font-size: 30px;
     border: transparent;
 }
+
 #login-btn:hover {
     width: 204px;
     height: 104px;
     cursor: pointer;
 }
-
-#general.active #login-btn {
-    display: none;
-}
-
-
+/* Desativa itens*/
 .input-container-login input {
     display: none;
 }
@@ -30,6 +26,12 @@
     display: none;
 }
 #confirm-login {
+    display: none;
+}
+
+
+/*Ativa itens*/
+#general.active #login-btn {
     display: none;
 }
 
@@ -76,6 +78,4 @@
 #general.active .comeback{
     display:flex;
     border: transparent;
-    
-
 }

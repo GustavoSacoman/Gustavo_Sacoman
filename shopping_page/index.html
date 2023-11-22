@@ -1,3 +1,5 @@
+<!--Adicionei notificação quando aperto o botao de adicionar ao carrinho com o codigo que esta no script-->
+
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -5,14 +7,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Amazuhn</title>
         <link rel="stylesheet" href="styles.css" />
-        <link rel="stylesheet" href="../styles/button.css" />
         <link rel="stylesheet" href="../styles/nav.css" />
         <link rel="stylesheet" href="../styles/footer.css" />
         <link rel="stylesheet" href="../styles/page_title.css" />
         <link rel="icon" href="../assets/logo/icon.jpg" />
     </head>
 
-    <body id="aaa">
+    <body id="cell">
         <nav>
             <ul class="header">
                 <img
@@ -34,7 +35,9 @@
                 <li><a href="../report_page/index.html">Relatório</a></li>
                 <li><a href="../help_page/index.html">Ajuda</a></li>
                 <li><a href="../register_page/index.html">Entrar</a></li>
-                <li><a id="cart_btn" href="#">Carrinho<span id="notific"></span></a>
+                <li><a id="cart_btn" href="#">
+                    <img src="../assets/icons_nav/carrinho-de-compras.png" alt="Carrinho de compras" width="25px">
+                <span id="notific"></span></a>
                     
                 </li>
             </ul>
@@ -245,5 +248,5 @@
             </div>
         </div>
     </body>
-    <script type="text/javascript" src="script_geral.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 </html>

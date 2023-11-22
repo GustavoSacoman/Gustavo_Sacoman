@@ -1,8 +1,8 @@
 
-#database {
+.database {
 
-    display: flex;
-    justify-content: center;
+    
+   
     align-items: center;
     margin: 100px auto;
     width: 70%;
@@ -30,6 +30,7 @@
     font-size: 20px;
     border: 1px solid #BBBFBF;
     padding: 7px 14px 6px;
+   
 
 }
 .data_color_two {

@@ -1,11 +1,11 @@
+<!--Fiz a pagina relatório ser totalmente funcional, utilizando foreach, innerHTML e o local storage, é possivel simular um banco de dados. esse código está no arquivo script da pasta report page-->
+
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Amazuhn</title>
-        <link rel="stylesheet" href="styles.css" />
-        <link rel="stylesheet" href="../styles/button.css" />
         <link rel="stylesheet" href="../styles/nav.css" />
         <link rel="stylesheet" href="../styles/footer.css" />
         <link rel="stylesheet" href="../styles/page_title.css" />
@@ -47,144 +47,24 @@
             </div>
 
             <div>
-                <table id="database">
-                    <tr>
-                        <th class="title_database">id_usuario</th>
-                        <th class="title_database">login_usuario</th>
-                        <th class="title_database">email_usuario</th>
-                        <th class="title_database">endereco_usuario</th>
-                        <th class="title_database">telefone_usuario</th>
-                        <th class="title_database">senha_usuario</th>
-                    </tr>
-                    <tr>
-                        <td class="data_color_one">1</td>
-                        <td class="data_color_one">joao.silva</td>
-                        <td class="data_color_one">joao.silva@gmail.com</td>
-                        <td class="data_color_one">Rua Eduardo Sprada</td>
-                        <td class="data_color_one">(41) 91234-5678</td>
-                        <td class="data_color_one">Js1234er@#</td>
-                    </tr>
-                    <tr>
-                        <td class="data_color_two">2</td>
-                        <td class="data_color_two">joao.silva</td>
-                        <td class="data_color_two">joao.silva@gmail.com</td>
-                        <td class="data_color_two">Rua Eduardo Sprada</td>
-                        <td class="data_color_two">(41) 91234-5678</td>
-                        <td class="data_color_two">Js1234er@#</td>
-                    </tr>
-                    <!---->
-                    <tr>
-                        <td class="data_color_one">3</td>
-                        <td class="data_color_one">joao.silva</td>
-                        <td class="data_color_one">joao.silva@gmail.com</td>
-                        <td class="data_color_one">Rua Eduardo Sprada</td>
-                        <td class="data_color_one">(41) 91234-5678</td>
-                        <td class="data_color_one">Js1234er@#</td>
-                    </tr>
-                    <tr>
-                        <td class="data_color_two">4</td>
-                        <td class="data_color_two">joao.silva</td>
-                        <td class="data_color_two">joao.silva@gmail.com</td>
-                        <td class="data_color_two">Rua Eduardo Sprada</td>
-                        <td class="data_color_two">(41) 91234-5678</td>
-                        <td class="data_color_two">Js1234er@#</td>
-                    </tr>
-                    <tr>
-                        <td class="data_color_one">5</td>
-                        <td class="data_color_one">joao.silva</td>
-                        <td class="data_color_one">joao.silva@gmail.com</td>
-                        <td class="data_color_one">Rua Eduardo Sprada</td>
-                        <td class="data_color_one">(41) 91234-5678</td>
-                        <td class="data_color_one">Js1234er@#</td>
-                    </tr>
-                    <tr>
-                        <td class="data_color_two">6</td>
-                        <td class="data_color_two">joao.silva</td>
-                        <td class="data_color_two">joao.silva@gmail.com</td>
-                        <td class="data_color_two">Rua Eduardo Sprada</td>
-                        <td class="data_color_two">(41) 91234-5678</td>
-                        <td class="data_color_two">Js1234er@#</td>
-                    </tr>
-                    <tr>
-                        <td class="data_color_one">7</td>
-                        <td class="data_color_one">joao.silva</td>
-                        <td class="data_color_one">joao.silva@gmail.com</td>
-                        <td class="data_color_one">Rua Eduardo Sprada</td>
-                        <td class="data_color_one">(41) 91234-5678</td>
-                        <td class="data_color_one">Js1234er@#</td>
-                    </tr>
-                    <tr>
-                        <td class="data_color_two">8</td>
-                        <td class="data_color_two">joao.silva</td>
-                        <td class="data_color_two">joao.silva@gmail.com</td>
-                        <td class="data_color_two">Rua Eduardo Sprada</td>
-                        <td class="data_color_two">(41) 91234-5678</td>
-                        <td class="data_color_two">Js1234er@#</td>
-                    </tr>
-                    <tr>
-                        <td class="data_color_one">9</td>
-                        <td class="data_color_one">joao.silva</td>
-                        <td class="data_color_one">joao.silva@gmail.com</td>
-                        <td class="data_color_one">Rua Eduardo Sprada</td>
-                        <td class="data_color_one">(41) 91234-5678</td>
-                        <td class="data_color_one">Js1234er@#</td>
-                    </tr>
-                    <tr>
-                        <td class="data_color_two">10</td>
-                        <td class="data_color_two">joao.silva</td>
-                        <td class="data_color_two">joao.silva@gmail.com</td>
-                        <td class="data_color_two">Rua Eduardo Sprada</td>
-                        <td class="data_color_two">(41) 91234-5678</td>
-                        <td class="data_color_two">Js1234er@#</td>
-                    </tr>
-                    <tr>
-                        <td class="data_color_one">11</td>
-                        <td class="data_color_one">joao.silva</td>
-                        <td class="data_color_one">joao.silva@gmail.com</td>
-                        <td class="data_color_one">Rua Eduardo Sprada</td>
-                        <td class="data_color_one">(41) 91234-5678</td>
-                        <td class="data_color_one">Js1234er@#</td>
-                    </tr>
-                    <tr>
-                        <td class="data_color_two">12</td>
-                        <td class="data_color_two">joao.silva</td>
-                        <td class="data_color_two">joao.silva@gmail.com</td>
-                        <td class="data_color_two">Rua Eduardo Sprada</td>
-                        <td class="data_color_two">(41) 91234-5678</td>
-                        <td class="data_color_two">Js1234er@#</td>
-                    </tr>
-                    <tr>
-                        <td class="data_color_one">13</td>
-                        <td class="data_color_one">joao.silva</td>
-                        <td class="data_color_one">joao.silva@gmail.com</td>
-                        <td class="data_color_one">Rua Eduardo Sprada</td>
-                        <td class="data_color_one">(41) 91234-5678</td>
-                        <td class="data_color_one">Js1234er@#</td>
-                    </tr>
-                    <tr>
-                        <td class="data_color_two">14</td>
-                        <td class="data_color_two">joao.silva</td>
-                        <td class="data_color_two">joao.silva@gmail.com</td>
-                        <td class="data_color_two">Rua Eduardo Sprada</td>
-                        <td class="data_color_two">(41) 91234-5678</td>
-                        <td class="data_color_two">Js1234er@#</td>
-                    </tr>
-                    <tr>
-                        <td class="data_color_one">15</td>
-                        <td class="data_color_one">joao.silva</td>
-                        <td class="data_color_one">joao.silva@gmail.com</td>
-                        <td class="data_color_one">Rua Eduardo Sprada</td>
-                        <td class="data_color_one">(41) 91234-5678</td>
-                        <td class="data_color_one">Js1234er@#</td>
-                    </tr>
-                    <tr>
-                        <td class="data_color_two">NULL</td>
-                        <td class="data_color_two">NULL</td>
-                        <td class="data_color_two">NULL</td>
-                        <td class="data_color_two">NULL</td>
-                        <td class="data_color_two">NULL</td>
-                        <td class="data_color_two">NULL</td>
-                    </tr>
+                <table id="table" class="database" >
+                    
+                    <tr >
+                        <th class="title_database">id usuario</th>
+                        <th class="title_database">Nome usuario</th>
+                        <th class="title_database">CPF usuario</th>
+                        <th class="title_database">Data de nascimento</th>
+                        <th class="title_database">Telefone</th>
+                        <th class="title_database">Email</th>
+                        <th class="title_database">CEP</th>
+                        <th class="title_database">Rua</th>
+                        <th class="title_database">Bairro</th>
+                        <th class="title_database">Cidade</th>
+                        <th class="title_database">Estado</th>
+                        <th class="title_database">Senha</th>
+                        <th class="title_database">Acao</th>
+        
+                </tbody>
                 </table>
             </div>
         </main>
@@ -249,4 +129,6 @@
             </div>
         </div>
     </body>
+    <script src="../report_page/script.js"></script>
+    <script src="../register_page/script_input.js"></script>
 </html>

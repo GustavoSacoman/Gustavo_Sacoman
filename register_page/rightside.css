@@ -27,43 +27,10 @@
     font-size: 20px;
     
 }
-.create-account {
-    display: none;
-}
-#title {
-    display: none;
-}
 #register-btn:hover {
     width: 204px;
     height: 104px;
     cursor: pointer;
-}
-
-#general.active_register #register-btn {
-    display: none;
-}
-#general.active_register #comeBackSide {
-    display: none;
-}
-#general.active_register #rightSide {
-    display: none;
-}
-#general.active_register .create-account{
-    display:flex;
-
-}
-
-#general.active_register #title{
-   display: block;
-    
-    
-}
-#general.active_register #comeback{
-    display:flex;
-    margin-right: 127vh ;
-    background-color: transparent;
-    border: transparent;
-    
 }
 .input-account {
     margin-left: 15vh;
@@ -84,4 +51,52 @@
 }
 #title {
    color: #fff; 
+}
+/*Desativa*/
+.create-account {
+    display: none;
+}
+#title {
+    display: none;
+}
+#input-date{
+    display: none;
+}
+
+/*Ativa displays e desativa outros*/
+#general.active_register #register-btn {
+    display: none;
+}
+#general.active_register #comeBackSide {
+    display: none;
+}
+#general.active_register #rightSide {
+    display: none;
+}
+#general.active_register .create-account{
+    display:flex;
+
+}
+#general.active_register #input-date{
+    display: block;
+    padding: 14px 80px ;
+    border-radius: 15px;
+    border: none;
+    background-color: #ffc700;
+    margin-left: 21.5vh;
+    margin-top: 8vh;
+
+}
+#general.active_register #title{
+   display: block;
+    
+    
+}
+#general.active_register #comeback{
+    display:flex;
+    margin-right: 127vh ;
+    background-color: transparent;
+    border: transparent;
+    padding-top: 20px;
+    
 }

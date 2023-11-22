@@ -28,6 +28,7 @@
                 bairro.value = conteudo.bairro;
                 cidade.value = conteudo.localidade;
                 uf.value = conteudo.uf;
+                
             }
             else {
                 cep_errado("Nao localizado");
@@ -59,10 +60,11 @@
                     const script = document.createElement("script");
     
     
-    
+                    
                     script.src = "https://viacep.com.br/ws/"+ cep_valido +"/json/?callback=retorno";
     
                     document.body.appendChild(script);
+                    
                 }
                 else {
                     cep_errado("invalido");
