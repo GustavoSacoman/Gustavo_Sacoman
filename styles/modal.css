@@ -40,7 +40,7 @@ body.teste #backdrop {
 body.teste {
   
     position: fixed;
-    
+    width: 100%;
     }
 
 
