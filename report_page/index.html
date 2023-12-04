@@ -11,35 +11,64 @@
         <link rel="stylesheet" href="../styles/page_title.css" />
         <link rel="icon" href="../assets/logo/icon.jpg" />
         <link rel="stylesheet" href="../report_page/style.css" />
+        <link rel="stylesheet" href="../styles/modal.css">
     </head>
 
-    <body>
-        <nav>
+    <body id="body">
+        <nav id="nav">
             <ul class="header">
                 <img
                     src="../assets/logo/icon.jpg"
                     alt="logo do site"
                     id="logo"
                 />
+
                 <div class="search">
                     <input
                         type="text"
                         class="searchTerm"
                         placeholder="Pesquise"
+                    
                     />
                     <button type="submit" class="searchButton">
                         <i class="fa fa-search">⌂</i>
                     </button>
                 </div>
                 <li><a href="../homepage2/index.html">Home</a></li>
-                <li><a href="../report_page/index.html">Relatório</a></li>
+                <li id="adm"><a href="#ADM">Page adm</a></li>
                 <li><a href="../help_page/index.html">Ajuda</a></li>
                 <li><a href="../register_page/index.html">Entrar</a></li>
                 <a id="cart_btn" href="#">
                     <img src="../assets/icons_nav/carrinho-de-compras.png" alt="Carrinho de compras" width="25px">
-                </a>
+                 </a>
             </ul>
+            
+                <ul id="nav_down">
+                    <button id="options_btn">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        
+                    </button>
+                    <li><a href="#">Itens mais vendidos</a></li>
+                    <li><a href="#">Ofertas do dia</a></li>
+                    <li><a href="#">Games</a></li>
+                    <li><a href="#">Brinquedos e Jogos</a></li>
+                    <li><a href="#">Mais vendidos</a></li>
+                    
+                </ul>
         </nav>
+        <div id="modal">
+           <button id="modal-btn-login"><a href="" >Faça seu login</a></button>
+            
+        </div>
+        <div id="backdrop">
+            <button id="exit-modal">
+                <div id="div-1"></div>
+                <div id="div-2"></div>
+            </button>
+        </div>
+
         <main>
             <div>
                 <h1 class="page_title">Relatório</h1>
@@ -131,4 +160,5 @@
     </body>
     <script src="../report_page/script.js"></script>
     <script src="../register_page/script_input.js"></script>
+    <script src="../scripts/nav.js"></script>
 </html>

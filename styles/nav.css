@@ -16,6 +16,11 @@
     font-family: Arial;
     font-size: 15px;
     font-style: normal;
+    padding: 17px 28px;
+}
+.header a:hover{
+    
+    border: 1px solid #fff;
 }
 
 #logo {
@@ -53,6 +58,10 @@
     cursor: pointer;
     font-size: 20px;
 }
+.searchButton:hover {
+    background: #c59a00;
+    border: 1px solid #c59a00;
+}
 
 #cart_btn {
     display: inline-flex;
@@ -62,4 +71,43 @@
     border-radius: 8px;
     background: #ffc700;
     color: black;
+}
+
+#nav_down {
+    display: flex;
+    padding: 17px;
+    justify-content: space-around;
+    background-color: #1b1f1f;
+    align-items: center;
+}
+#nav_down li{
+    list-style: none;
+}
+#nav_down  a {
+    text-decoration: none;
+    color: #fff;
+    padding: 18px 18px;
+    
+}
+#nav_down a:hover {
+    border: 1px solid #fff;
+}
+#options_btn {
+    padding: 2px;
+    border: 0;
+    background-color: transparent;
+    
+}
+#options_btn div{
+
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    margin: 3px 0;
+    
+}
+#options_btn:hover {
+   
+    border: 1px solid #fff;
+    
 }

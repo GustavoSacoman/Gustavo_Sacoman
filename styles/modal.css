@@ -1,0 +1,97 @@
+#modal {
+    display: block;
+    position:fixed;
+    background-color: #fff;
+	width: 0%;
+	height: 100vh;
+	top: 0;
+	bottom: 0;
+	left: 0;
+    transition: .3s;
+    visibility: hidden;
+    overflow-y: hidden;
+}
+body.teste #modal {
+    position: absolute;
+    visibility: visible;
+    width: 20%;
+}
+
+#backdrop {
+    display: block;
+    height: 100vh;
+    background-color:rgba(0, 0, 0, 0.6);
+    visibility: hidden;
+    overflow-y: hidden;
+    width: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+}
+body.teste #backdrop {
+    visibility: visible;
+    overflow-y: visible;
+    position: absolute;
+    width: 80%;
+    z-index: 1000;
+}
+
+body.teste {
+  
+    position: fixed;
+    
+    }
+
+
+
+#exit-modal #div-1{
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 50px;
+    border-radius: 30px;
+    background-color: #ffc700;
+    top: 35px;
+    rotate: -45deg;
+
+}
+#exit-modal{
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    margin-top: 15px;
+    margin-left: 8px;
+    width: 47px;
+    height: 45px;
+}
+#exit-modal #div-2{
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 50px;
+    border-radius: 30px;
+    background-color: #ffc700;
+    top: 35px;
+    rotate: 225deg;
+}
+
+
+#modal-btn-login {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    background-color: #1b1f1f;
+    border: 0;
+    cursor: pointer;
+   
+}
+#modal-btn-login a {
+    width: 100%;
+    height: 80px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #fff;
+   
+   
+}

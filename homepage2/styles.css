@@ -67,3 +67,13 @@ main{
     cursor: pointer;
 }
 
+#adm {
+   display: none;
+}
+
+body.teste  {
+  
+    position: fixed;
+    
+    }
+
